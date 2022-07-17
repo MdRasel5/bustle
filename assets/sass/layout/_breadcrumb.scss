@@ -1,0 +1,87 @@
+/* Breadcrumb Section */
+.breadcrumb-area {
+    position: relative;
+    overflow: hidden;
+    background: $bg-color;
+
+    nav {
+        z-index: 0;
+    }
+
+    .bread-shapes {
+        img {
+            width: inherit;
+        }
+
+        .b-shape-1 {
+            position: absolute;
+            right: 36%;
+            top: 9%;
+            width: 60px;
+        }
+
+        .b-shape-2 {
+            position: absolute;
+            left: 11%;
+            bottom: 12%;
+            width: 30px;
+        }
+
+        .b-shape-3 {
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            width: 300px;
+            transform: rotate(90deg);
+
+            @include desktop {
+                display: none;
+            }
+
+            @include tablet {
+                display: none;
+            }
+
+            @include sm-device {
+                display: none;
+            }
+        }
+
+        .b-shape-4 {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            width: 200px;
+            transform: rotate(180deg);
+        }
+    }
+
+    h2 {
+
+        text-align: center;
+    }
+
+    .breadcrumb {
+        background: none;
+        display: flex;
+        justify-content: center;
+
+        .breadcrumb-item {
+            color: $secondary-color;
+            text-transform: capitalize;
+            font-weight: 700;
+
+            a {
+                color: $secondary-color;
+                text-transform: capitalize;
+                transition: .3s;
+                font-weight: 700;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+    }
+}

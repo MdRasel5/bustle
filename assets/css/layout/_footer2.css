@@ -1,0 +1,13 @@
+/* Footer 2 */
+.footer-area2 {
+  position: relative; }
+  .footer-area2 .footer-t-shapes img {
+    width: inherit; }
+  .footer-area2 .footer-t-shapes .f2shp1 {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .footer-area2 .footer-t-shapes .f2shp2 {
+    position: absolute;
+    left: 0;
+    top: 0; }

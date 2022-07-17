@@ -1,0 +1,62 @@
+/*-------------------------------------------------------------
+Template Name: AppDev
+Template URL: 
+Author Name: SoftTech IT
+Author URL: https://themeforest.net/user/softtech-it/portfolio
+Version: 1.0
+Description: 
+Tags: education
+Text Domain: AppDev
+-------------------------------------------------------------*/
+
+/*------------------------------------------------------------- 
+TABLE OF CONTENTS: 
+---------------------------------------------------------------
+>> Author CSS
+>> Navbar
+>> Header Section
+>> Footer Section
+>> Breadcrumb Section
+>> Preloader
+>> Button 
+>> Form
+>> Theme
+>> Homepage 1
+>> Blog Page
+>> Blog Single Page
+>> Homepage 3
+>> Footer 3
+>> Header 2
+>> Homepage 2
+>> Footer 2
+--------------------------------------------------------------*/
+
+// Setting
+@import 'settings/variable';
+@import 'settings/mixin';
+
+// Base
+@import 'base/base';
+
+// Layout
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/header2';
+@import 'layout/footer';
+@import 'layout/footer3';
+@import 'layout/footer2';
+@import 'layout/breadcrumb';
+@import 'layout/container';
+
+// Module
+@import 'module/preloader';
+@import 'module/button';
+@import 'module/form';
+
+// Theme 
+@import 'theme/theme';
+@import 'theme/homepage1';
+@import 'theme/blog';
+@import 'theme/blog-single';
+@import 'theme/homepage3';
+@import 'theme/homepage2';

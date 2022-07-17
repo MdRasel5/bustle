@@ -1,0 +1,141 @@
+/* Header Section */
+html {
+    scroll-behavior: smooth;
+}
+
+.header-area {
+
+    .header-top {
+        border-bottom: 1px solid #e3e3e3;
+        padding: 20px 0;
+        position: relative;
+
+        li {
+            list-style: none;
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: $black-color2;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        i {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+
+        ul {
+            ul {
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                border: 1px solid #eaeaea;
+                top: 39px;
+                left: 0;
+                min-width: 70px;
+                padding: 10px;
+            }
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        .header-info {
+            display: flex;
+        }
+
+        .currency {
+            margin-right: 20px;
+        }
+
+        .h-top-middle {
+            display: flex;
+            justify-content: center;
+
+            .logo {
+                img {
+                    width: 230px;
+                    height: auto;
+                }
+            }
+        }
+
+        .h-top-right {
+            .header-action {
+                li {
+                    display: inline-block;
+                }
+
+                li {
+                    margin-right: 10px;
+                }
+
+                i {
+                    color: $primary-color;
+                    padding: 10px;
+                    border: 1px solid $border-color;
+                    border-radius: 50px;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+
+                .account {
+                    color: $primary-color2;
+                }
+
+                i:nth-child() {
+                    color: $primary-color2;
+                }
+            }
+        }
+    }
+
+    .header-bottom {
+        .categories {
+            background-color: $primary-color;
+            padding: 20px;
+            color: $white-color;
+            cursor: pointer;
+            font-weight: 500;
+
+            i {
+                display: inline-block;
+                margin-right: 15px;
+            }
+        }
+
+        .main-menu {
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+        }
+
+        .contact-info {
+            font-size: 18px;
+            color: $heading-color;
+            font-weight: bold;
+
+            strong,
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+
+
+
+}

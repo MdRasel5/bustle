@@ -1,0 +1,158 @@
+/* Footer Section */
+.footer-area {
+    background: $bg-color;
+    overflow: hidden;
+
+    .footer-top {
+        position: relative;
+
+        .footer-t-shapes {
+            .ftshape1 {
+                width: 150px;
+                position: absolute;
+                bottom: -6%;
+                left: -2%;
+            }
+
+            .ftshape2 {
+                width: 60px;
+                position: absolute;
+                bottom: 5%;
+                right: 1%;
+            }
+        }
+
+        .widget {
+            margin-bottom: 30px;
+
+            .f-logo {
+                width: 170px;
+                margin-bottom: 30px;
+
+                @include portrait-phone {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            h6 {
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            .social-icons {
+                span {
+                    width: 40px;
+                    height: 40px;
+                    background: transparent;
+                    line-height: 40px;
+                    text-align: center;
+                    display: inline-block;
+                    border-radius: 50%;
+                    transition: $transition;
+
+                    @include desktop {
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                    }
+
+                    &:hover {
+                        background: $primary-color;
+
+                        a {
+                            color: $white-color;
+                        }
+                    }
+
+                    a {
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    line-height: 2;
+
+                    a {
+                        color: $secondary-color;
+                        text-transform: capitalize;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .newsletter {
+                form {
+                    @include desktop {
+                        position: relative;
+                    }
+
+                    input {
+                        border: 2px solid $primary-color;
+                        border-radius: 8px;
+                        background: $white-color;
+                        padding: 12px 55px 12px 12px;
+                        width: 200px;
+
+                        @include desktop {
+                            padding: 12px 49px 12px 12px;
+                        }
+
+                        @include landscape-phone {
+                            padding: 12px 43px 12px 12px;
+                        }
+                    }
+
+                    button {
+                        background: $primary-color;
+                        color: $white-color;
+                        border: 2px solid transparent;
+                        padding: 12px 18px;
+                        border-radius: 8px;
+                        margin-left: -56px;
+
+                        @include desktop {
+                            position: absolute;
+                            top: 0%;
+                            right: 0%;
+                        }
+
+                        @include landscape-phone {
+                            margin-left: -53px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background: $secondary-color;
+
+        .copyright-area {
+            p {
+                color: $white-color;
+                margin-bottom: 0;
+
+                a {
+                    color: $white-color;
+                    transition: $transition;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

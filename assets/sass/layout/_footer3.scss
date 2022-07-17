@@ -1,0 +1,68 @@
+/*Footer 3*/
+.footer-area3 {
+    .footer-top {
+        background: $bg-color;
+        overflow: hidden;
+        position: relative;
+
+        .footer-t-shapes {
+            img {
+                width: inherit;
+            }
+
+            .ftshp1 {
+                position: absolute;
+                right: 0%;
+                top: 0%;
+
+                @include sm-device {
+                    display: none;
+                }
+
+            }
+
+            .ftshp2 {
+                position: absolute;
+                left: 10%;
+                bottom: 10%;
+                width: 100px !important;
+            }
+        }
+
+        .ftshp3 {
+            position: absolute;
+            left: 10%;
+            top: 10%;
+            width: 40px !important;
+        }
+
+        .widget {
+            h6 {
+                text-transform: uppercase;
+            }
+
+            .social-icons {
+                span {
+                    border-radius: 5px;
+                    transition: $transition;
+
+                    &:hover {
+                        background: $home3-primary-color;
+                    }
+
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: $home3-primary-color !important;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

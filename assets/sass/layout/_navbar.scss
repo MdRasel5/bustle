@@ -1,0 +1,316 @@
+/* Navbar */
+.main-menu {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-right: 40px;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include desktop {
+            margin-right: 25px;
+        }
+
+        &:hover {
+            .submenu {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .submenu {
+            position: absolute;
+            top: 110%;
+            left: 0;
+            width: 180px;
+            padding: 20px;
+            background: $primary-color;
+            color: $white-color;
+            border-radius: 5px;
+            opacity: 0;
+            visibility: hidden;
+            transition: $transition;
+            z-index: 22;
+
+            @include mobile-device {
+                transition: initial;
+            }
+
+            @include tablet {
+                width: 100%;
+                padding: 0;
+            }
+
+            @include sm-device {
+                width: 100%;
+                padding: 0;
+            }
+
+            li {
+                display: block;
+                position: relative;
+                margin-right: 0;
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+
+                        @include tablet {
+                            display: none;
+                        }
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    height: 1px;
+                    width: 0%;
+                    background: $white-color;
+                    position: absolute;
+                    bottom: 0px;
+                    transition: $transition;
+
+                }
+
+                a {
+                    padding: 5px 0;
+                    color: $white-color;
+                    transition: $transition;
+
+                }
+            }
+        }
+
+        a {
+            color: $secondary-color;
+            font-size: 14px;
+            display: block;
+            text-transform: capitalize;
+            font-family: $template-font;
+            font-weight: 500;
+            transition: $transition;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+
+        a.template-btn1 {
+            background: $white-color;
+        }
+    }
+}
+
+.main-menu2 {
+    li {
+        a {
+            transition: $transition;
+
+            &:hover {
+                color: $home2-primary-color;
+            }
+        }
+    }
+}
+
+.main-menu3 {
+    li {
+        a {
+            transition: $transition;
+
+            &:hover {
+                color: $home3-primary-color;
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+
+    .main-menu {
+        li {
+            a {
+                span {
+                    display: none;
+                }
+            }
+
+            .submenu {
+                padding: 0;
+                opacity: 1;
+            }
+        }
+    }
+
+    @include portrait-phone {
+        top: -6px;
+    }
+
+    .main-menu li .submenu {
+        position: static;
+        width: 100%;
+    }
+
+    .mean-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .mean-bar {
+        background: transparent;
+
+        .mean-nav {
+            margin-top: 75px;
+            background: $primary-color;
+        }
+    }
+
+    .mean-nav ul li a.mean-expand:hover {
+        background: $primary-color;
+    }
+
+}
+
+.mean-container a.meanmenu-reveal span {
+    background-color: $white-color;
+}
+
+.mean-container a.meanmenu-reveal {
+    background: $primary-color;
+    right: 30px !important;
+    top: 22px;
+    padding: 12px;
+    left: auto;
+    text-align: center;
+    text-indent: 0px;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+
+    @include portrait-phone {
+        right: 9px !important;
+        top: 28px;
+        padding: 8px;
+    }
+
+    @include landscape-phone {
+        right: 40px !important;
+        top: 22px;
+        padding: 12px;
+    }
+}
+
+.mean-container a.meanmenu-reveal.meanclose {
+    color: $white-color;
+    background: $primary-color;
+}
+
+.mean-container .mean-nav {
+    background: $primary-color;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+    background: $primary-color;
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+    width: 25px;
+    height: 25px;
+}
+
+
+// home 2 main-menu 2
+.main-menu2 {
+    li {
+        .submenu {
+            background: $home2-primary-color;
+        }
+    }
+}
+
+
+// mobile-menu 2
+
+.mobile-menu2.mean-container a.meanmenu-reveal {
+    background: $home2-primary-color;
+}
+
+.mobile-menu2.mean-container a.meanmenu-reveal.meanclose {
+    background: $home2-primary-color;
+}
+
+.mobile-menu2.mean-container .mean-nav {
+    background: $home2-primary-color;
+}
+
+.mobile-menu2.mean-container .mean-nav ul li a.mean-expand:hover {
+    background: $home2-primary-color;
+}
+
+.mobile-menu2 {
+    top: -13px;
+
+    @include landscape-phone {
+        top: -12px;
+    }
+
+    @include portrait-phone {
+        top: -19px;
+    }
+
+    .mean-nav {
+        margin-top: 75px;
+        background: $home2-primary-color;
+    }
+
+    .mean-nav ul li a.mean-expand:hover {
+        background: $home2-primary-color;
+    }
+}
+
+// home 3 main-menu 3
+.main-menu3 {
+    li {
+        .submenu {
+            background: $home3-primary-color;
+        }
+    }
+}
+
+
+// mobile-menu 2
+
+.mobile-menu3.mean-container a.meanmenu-reveal {
+    background: $home3-primary-color;
+}
+
+.mobile-menu3.mean-container a.meanmenu-reveal.meanclose {
+    background: $home3-primary-color;
+}
+
+.mobile-menu3.mean-container .mean-nav {
+    background: $home3-primary-color;
+}
+
+.mobile-menu3.mean-container .mean-nav ul li a.mean-expand:hover {
+    background: $home3-primary-color;
+}
+
+.mobile-menu3 {
+
+    .mean-nav {
+        margin-top: 75px;
+        background: $home3-primary-color;
+    }
+
+    .mean-nav ul li a.mean-expand:hover {
+        background: $home3-primary-color;
+    }
+}

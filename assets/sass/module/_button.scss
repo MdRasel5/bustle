@@ -1,0 +1,196 @@
+/* Button */
+.template-btn1 {
+    box-shadow: 0px 15px 30px 0px rgba(255, 115, 140, 0.2);
+    background: $primary-color;
+    border: 2px solid transparent;
+    color: $white-color;
+    padding: 12px 30px;
+    font-family: $heading-font;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: $transition;
+    text-transform: capitalize;
+
+    @include portrait-phone {
+        padding: 8px 15px;
+    }
+
+    &:hover {
+        background: transparent;
+        color: $secondary-color;
+        border: 2px solid $primary-color;
+    }
+}
+
+.template-btn2 {
+    background: transparent;
+    border: 2px solid $primary-color;
+    color: $secondary-color;
+    padding: 12px 30px;
+    font-family: $heading-font;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: $transition;
+    text-transform: capitalize;
+
+    @include portrait-phone {
+        padding: 8px 15px;
+    }
+
+    &:hover {
+        background: $primary-color;
+        color: $white-color;
+        border: 2px solid transparent;
+    }
+}
+
+// .template-btn1 {
+//     background: $btn-gradient;
+//     border: 2px solid transparent;
+//     color: $white-color;
+//     padding: 12px 30px;
+//     font-family: $heading-font;
+//     font-weight: 600;
+//     font-size: 14px;
+//     display: inline-block;
+//     border-radius: 8px;
+//     transition: $transition;
+//     text-transform: capitalize;
+//     box-shadow: 0px 15px 30px 0px rgba(255, 115, 140, 0.2);
+
+//     @include portrait-phone {
+//         padding: 8px 15px;
+//     }
+
+//     &:hover {
+//         background: transparent;
+//         color: $secondary-color;
+//         border: 2px solid $primary-color;
+//     }
+// }
+
+
+// .template-btn2 {
+//     background: transparent;
+//     border: 2px solid $primary-color;
+//     color: $secondary-color;
+//     padding: 12px 30px;
+//     font-family: $heading-font;
+//     font-weight: 600;
+//     font-size: 14px;
+//     display: inline-block;
+//     border-radius: 8px;
+//     transition: $transition;
+//     text-transform: capitalize;
+
+//     @include portrait-phone {
+//         padding: 8px 15px;
+//     }
+
+//     &:hover {
+//         background: $btn-gradient;
+//         color: $white-color;
+//         border: 2px solid transparent;
+//     }
+// }
+
+.template-btn3 {
+    box-shadow: 0px 15px 30px 0px rgba(255, 115, 140, 0.2);
+    background: $home3-primary-color;
+    border: 2px solid transparent;
+    color: $white-color;
+    padding: 12px 30px;
+    font-family: $heading-font;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: .3s;
+    text-transform: capitalize;
+
+    @include portrait-phone {
+        padding: 8px 15px;
+    }
+
+    &:hover {
+        background: transparent;
+        color: $secondary-color;
+        border: 2px solid $home3-primary-color;
+    }
+}
+
+.template-btn4 {
+    background: transparent;
+    border: 2px solid $home3-primary-color;
+    color: $secondary-color;
+    padding: 12px 30px;
+    font-family: $heading-font;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: $transition;
+    text-transform: capitalize;
+
+    @include portrait-phone {
+        padding: 8px 15px;
+    }
+
+    &:hover {
+        background: $home3-primary-color;
+        color: $white-color;
+        border: 2px solid transparent;
+    }
+}
+
+.template-btn5 {
+    background: $home2-primary-color;
+    border: 2px solid transparent;
+    color: $white-color;
+    padding: 12px 30px;
+    font-family: $heading-font;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: .3s;
+    text-transform: capitalize;
+
+    @include portrait-phone {
+        padding: 8px 15px;
+    }
+
+    &:hover {
+        background: transparent;
+        color: $secondary-color;
+        border: 2px solid $home2-primary-color;
+    }
+}
+
+.template-btn6 {
+    background: transparent;
+    border: 2px solid $home2-primary-color;
+    color: $secondary-color;
+    padding: 12px 30px;
+    font-family: $heading-font;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 20px;
+    transition: .3s;
+    text-transform: capitalize;
+
+    @include portrait-phone {
+        padding: 8px 15px;
+    }
+
+    &:hover {
+        background: $home2-primary-color;
+        color: $white-color;
+        border: 2px solid $home2-primary-color;
+    }
+}

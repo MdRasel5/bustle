@@ -1,0 +1,5 @@
+@include screen-larger-than-1620 {
+    .container {
+        max-width: 1620px !important;
+    }
+}

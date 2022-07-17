@@ -1,0 +1,103 @@
+/* Author CSS */
+body {
+    margin: 0;
+    color: $paragraph-color;
+    font-family: $template-font;
+}
+
+h1 {
+    color: $heading-color;
+    font-size: 72px;
+
+    @include sm-device {
+        font-size: 70px;
+    }
+
+}
+
+h2 {
+    color: $heading-color;
+    font-size: 60px;
+
+    @include portrait-phone {
+        font-size: 50px;
+    }
+}
+
+h3 {
+    color: $heading-color;
+    font-size: 48px;
+}
+
+h4 {
+    color: $heading-color;
+    font-size: 24px;
+}
+
+h5 {
+    color: $heading-color;
+    font-size: 18px;
+}
+
+h6 {
+    color: $heading-color;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+a {
+    color: $secondary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+p {
+    color: $paragraph-color;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: $template-font;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+.slick-slide {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
