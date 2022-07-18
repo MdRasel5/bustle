@@ -8,17 +8,56 @@
         padding: 20px 20px 0 20px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-
         li {
             list-style: none;
             border-bottom: 1px solid $border-color;
             padding: 10px 0;
             display: flex;
             position: relative;
+
+            .has-mega-menu {
+                width: 800px;
+                background-image: url(/assets/images/mega-menu-bg.png);
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-position-x: right;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                position: absolute;
+                padding: 30px;
+                left: 371px;
+                z-index: 999;
+                top: 0;
+                display: none;
+
+                .mega-menu {
+                    width: 100%;
+                    display: block !important;
+
+                    .menu-item {
+                        width: 33.3%;
+                        float: left;
+                        border-bottom: none;
+
+                        ul li {
+                            border-bottom: none;
+
+                            img {
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+
+                        .title {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+            }
+
+            &:hover .has-mega-menu {
+                display: block;
+            }
         }
 
         li:last-child {
