@@ -5,13 +5,12 @@
 .hero-section {
     .category-dropdown {
         background: #fff;
-        padding: 20px 20px 0 20px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         li {
             list-style: none;
             border-bottom: 1px solid $border-color;
-            padding: 10px 0;
+            padding: 10px 20px;
             display: flex;
             position: relative;
 
@@ -24,7 +23,7 @@
                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                 position: absolute;
                 padding: 30px;
-                left: 371px;
+                left: 100%;
                 z-index: 999;
                 top: 0;
                 display: none;
@@ -36,6 +35,7 @@
                     .menu-item {
                         width: 33.3%;
                         float: left;
+                        padding: 0;
                         border-bottom: none;
 
                         ul li {
