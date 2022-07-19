@@ -97,7 +97,8 @@
     .hero-banner-slider {
         position: relative;
         height: 490px;
-        background-image: url(/assets/images/banner-bg.png);
+        // background-image: url(/assets/images/banner-bg.png);
+        background-color: blue;
         background-size: cover;
         padding: 130px 45px;
 
@@ -122,41 +123,48 @@
             }
         }
 
-        .slick-dots {
-            position: absolute;
-            top: 420px;
-            left: 350px;
-        }
-
-        .slick-dots li {
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        .slick-dots .slick-active {
-            font-size: 0;
-            width: 30px;
-            height: 10px;
-            border-radius: 6px;
-            border: none;
-            background-color: $primary-color;
-            display: inline-block;
-
-            button {
-                background-color: transparent;
-            }
-        }
-
-        .slick-dots li button {
-            font-size: 0;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            border: none;
-            background-color: $white-color;
-        }
-
     }
+
+    // Slick Customization
+
+    .slick-dots {
+        position: absolute;
+        top: 88%;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .slick-dots .slick-active {
+        font-size: 0;
+        width: 30px;
+        height: 10px;
+        border-radius: 6px;
+        border: none;
+        background-color: $primary-color;
+        display: inline-block;
+
+        button {
+            background-color: transparent;
+        }
+    }
+
+    .slick-dots li button {
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        background-color: $white-color;
+    }
+
+    .slick-dots li button::before {
+        font-size: 0;
+    }
+
+    // Slick End
 
     .new-collection {
         position: relative;
