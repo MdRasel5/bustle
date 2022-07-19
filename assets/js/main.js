@@ -5,4 +5,9 @@ $(document).ready(function(){
         speed: 500,
        arrows: false
     });
+
+
+
+     $('.currency-select').niceSelect();
 });
+

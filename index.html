@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/meanmenu.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -36,26 +37,20 @@
                         <div class="h-top-left col-lg-3">
                             <div class="header-info">
                                 <div class="currency">
-                                    <ul>
-                                        <li>
-                                            <a href="#">$ USD<i class="fa-solid fa-chevron-down"></i></a>
-                                            <ul>
-                                                <li><a href="#">€ EUR</a></li>
-                                                <li><a href="#">₹ INR</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <select class="currency-select">
+                                        <option data-display="$ USD">$ USD
+                                        </option>
+                                        <option value="1">€ EUR</option>
+                                        <option value="2">₹ INR</option>
+                                    </select>
                                 </div>
                                 <div class="language">
-                                    <ul>
-                                        <li>
-                                            <a href="#">English<i class="fa-solid fa-chevron-down"></i></a>
-                                            <ul>
-                                                <li><a href="#">Bangla</a></li>
-                                                <li><a href="#">Hindi</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                    <select class="currency-select">
+                                        <option data-display="English">English
+                                        </option>
+                                        <option value="1">Bangla</option>
+                                        <option value="2">Hindi</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -66,11 +61,34 @@
                         </div>
                         <div class="h-top-right col-lg-3">
                             <div class="header-action">
-                                <ul>
-                                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-user account"></i></a></li>
-                                    <li><a href="#"><i class="fa-solid fa-basket-shopping"></i> $ 0.00</a></li>
-                                </ul>
+                                <div class="header-search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="header-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </div>
+                                <div class="header-account">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <div class="cart-dropdown">
+                                        <ul>
+                                            <li>
+                                                <div class="shopping-cart-img">
+                                                    <a href="#"><img src="assets/images/thumbnail-2.jpg"
+                                                            alt="thumbnail"></a>
+                                                </div>
+
+                                                <div class="shopping-cart-title">
+                                                    <h5><a href="shop-product-right.html">Daisy Casual Bag</a>
+                                                    </h5>
+                                                    <h5><span>1 × </span>$800.00</h5>
+                                                </div>
+                                                <div class="shopping-cart-delete">
+                                                    <a href="#"><i class="fa-solid fa-xmark"></i></a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,7 +181,7 @@
                                                 <li><a href="#">test</a></li>
                                             </ul>
                                         </li>
-                                    </ul>>
+                                    </ul>
                                 </div>
                             </li>
                             <li>
@@ -173,6 +191,45 @@
                                         <i class="fa-solid fa-angle-right"></i>
                                     </span>
                                 </a>
+                                <div class="has-mega-menu">
+                                    <ul class="mega-menu">
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/headphone.png" alt="camera"></li>
+                                                <li><a class="title" href="#">Headphone</a></li>
+                                                <li><a href="#">Wireless Headphones</a></li>
+                                                <li><a href="#">Smart Headphones</a></li>
+                                                <li><a href="#">Black Headphones</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">Laptop Headphones</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/watch2.png" alt="watch"></li>
+                                                <li><a class="title" href="#">Smart Watch</a></li>
+                                                <li><a href="#">Classic watch</a></li>
+                                                <li><a href="#">Digital Watch</a></li>
+                                                <li><a href="#">Women Watch</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">Wall Colck</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/speaker.png" alt="speaker"></li>
+                                                <li><a class="title" href="#">Accessories</a></li>
+                                                <li><a href="#">Laptop</a></li>
+                                                <li><a href="#">Smart Phone</a></li>
+                                                <li><a href="#">Smart TV</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">test</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
 
                             <li>
@@ -182,6 +239,45 @@
                                         <i class="fa-solid fa-angle-right"></i>
                                     </span>
                                 </a>
+                                <div class="has-mega-menu">
+                                    <ul class="mega-menu">
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/headphone.png" alt="camera"></li>
+                                                <li><a class="title" href="#">Headphone</a></li>
+                                                <li><a href="#">Wireless Headphones</a></li>
+                                                <li><a href="#">Smart Headphones</a></li>
+                                                <li><a href="#">Black Headphones</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">Laptop Headphones</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/watch2.png" alt="watch"></li>
+                                                <li><a class="title" href="#">Smart Watch</a></li>
+                                                <li><a href="#">Classic watch</a></li>
+                                                <li><a href="#">Digital Watch</a></li>
+                                                <li><a href="#">Women Watch</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">Wall Colck</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/speaker.png" alt="speaker"></li>
+                                                <li><a class="title" href="#">Accessories</a></li>
+                                                <li><a href="#">Laptop</a></li>
+                                                <li><a href="#">Smart Phone</a></li>
+                                                <li><a href="#">Smart TV</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">test</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <i class="fa-solid fa-laptop secondary3-combo"></i>
@@ -190,6 +286,45 @@
                                         <i class="fa-solid fa-angle-right"></i>
                                     </span>
                                 </a>
+                                <div class="has-mega-menu">
+                                    <ul class="mega-menu">
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/headphone.png" alt="camera"></li>
+                                                <li><a class="title" href="#">Headphone</a></li>
+                                                <li><a href="#">Wireless Headphones</a></li>
+                                                <li><a href="#">Smart Headphones</a></li>
+                                                <li><a href="#">Black Headphones</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">Laptop Headphones</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/watch2.png" alt="watch"></li>
+                                                <li><a class="title" href="#">Smart Watch</a></li>
+                                                <li><a href="#">Classic watch</a></li>
+                                                <li><a href="#">Digital Watch</a></li>
+                                                <li><a href="#">Women Watch</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">Wall Colck</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <ul>
+                                                <li><img src="assets/images/speaker.png" alt="speaker"></li>
+                                                <li><a class="title" href="#">Accessories</a></li>
+                                                <li><a href="#">Laptop</a></li>
+                                                <li><a href="#">Smart Phone</a></li>
+                                                <li><a href="#">Smart TV</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">test</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <i class="fa-solid fa-clock primary-combo"></i>
@@ -286,6 +421,27 @@
                             </div>
                         </div>
 
+                        <div class="hero-banner-slider">
+                            <div class="banner-1">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5">
+                                        <div class="banner-contnets">
+                                            <h2>Logitech <br> StreamCam</h2>
+                                            <p>Brings the Theater to your soul</p>
+                                            <a href="#" class="template-btn1">Shop Now <i
+                                                    class="fa-solid fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 offset-lg-1">
+                                        <div class="product-image">
+                                            <img src="assets/images/camera.png" alt="camera">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
@@ -343,6 +499,7 @@
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="assets/js/vendor/counterup.min.js"></script>
     <script src="assets/js/vendor/waypoints.min.js"></script>
     <script src="assets/js/vendor/easing.min.js"></script>
