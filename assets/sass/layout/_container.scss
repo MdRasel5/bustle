@@ -3,3 +3,15 @@
         max-width: 1620px !important;
     }
 }
+
+@include screen-1440 {
+    .container {
+        max-width: 1620px !important;
+    }
+}
+
+@include screen-1200 {
+    .container {
+        max-width: 1620px !important;
+    }
+}

@@ -11,3 +11,8 @@ $(document).ready(function(){
      $('.currency-select').niceSelect();
 });
 
+// Cart
+function myFunction() {
+   var element = document.getElementById("cart-dropdown");
+   element.classList.toggle("cart-dropdown-block");
+}

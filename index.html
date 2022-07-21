@@ -65,11 +65,11 @@
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
                                 <div class="header-cart">
-                                    <i class="fa-solid fa-basket-shopping"></i>
+                                    <i onclick="myFunction()" class="fa-solid fa-basket-shopping pink-color"></i>
                                 </div>
                                 <div class="header-account">
                                     <i class="fa-solid fa-basket-shopping"></i>
-                                    <div class="cart-dropdown">
+                                    <div id="cart-dropdown" class="cart-dropdown">
                                         <ul>
                                             <li>
                                                 <div class="shopping-cart-img">
@@ -80,7 +80,7 @@
                                                 <div class="shopping-cart-title">
                                                     <h5><a href="shop-product-right.html">Daisy Casual Bag</a>
                                                     </h5>
-                                                    <h5><span>1 × </span>$800.00</h5>
+                                                    <span>1 × $800.00</span>
                                                 </div>
                                                 <div class="shopping-cart-delete">
                                                     <a href="#"><i class="fa-solid fa-xmark"></i></a>
@@ -96,7 +96,7 @@
                                                 <div class="shopping-cart-title">
                                                     <h5><a href="shop-product-right.html">Daisy Casual Bag</a>
                                                     </h5>
-                                                    <h5><span>1 × </span>$800.00</h5>
+                                                    <span>1 × $800.00</span>
                                                 </div>
                                                 <div class="shopping-cart-delete">
                                                     <a href="#"><i class="fa-solid fa-xmark"></i></a>
@@ -104,6 +104,15 @@
                                             </li>
 
                                         </ul>
+                                        <div class="shopping-cart-footer">
+                                            <div class="shopping-cart-total">
+                                                <h4>Total <span>$4000.00</span></h4>
+                                            </div>
+                                            <div class="shopping-cart-button">
+                                                <a href="#">View cart</a>
+                                                <a href="#">Checkout</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +407,7 @@
                 </div>
                 <div class="col-6">
                     <div class="hero-slider-active">
-                        <div class="hero-banner-slider">
+                        <div class="hero-banner-slider" style="background-image: url('/assets/images/banner-bg.jpg');">
                             <div class="banner-1">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
@@ -418,8 +427,8 @@
                             </div>
                         </div>
 
-                        <div class="hero-banner-slider">
-                            <div class="banner-1">
+                        <div class="hero-banner-slider" style="background-image: url('/assets/images/banner-bg.jpg');">
+                            <div class=" banner-1">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
                                         <div class="banner-contnets">
@@ -431,14 +440,14 @@
                                     </div>
                                     <div class="col-lg-6 offset-lg-1">
                                         <div class="product-image">
-                                            <img src="assets/images/camera.png" alt="camera">
+                                            <img src="assets/images/beg.png" alt="fashion">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="hero-banner-slider">
+                        <div class="hero-banner-slider" style="background-image: url('/assets/images/banner-bg.jpg');">
                             <div class="banner-1">
                                 <div class="row align-items-center">
                                     <div class="col-lg-5">
@@ -451,7 +460,7 @@
                                     </div>
                                     <div class="col-lg-6 offset-lg-1">
                                         <div class="product-image">
-                                            <img src="assets/images/camera.png" alt="camera">
+                                            <img src="assets/images/backpack.png" alt="backpack">
                                         </div>
                                     </div>
                                 </div>
@@ -465,7 +474,7 @@
                 <div class="col-3">
                     <div class="new-collection">
                         <div class="collection light-pink">
-                            <div class="row">
+                            <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="collection-content">
                                         <h4>Titan Watch</h4>
@@ -482,7 +491,7 @@
                         </div>
 
                         <div class="collection light-blue">
-                            <div class="row">
+                            <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="collection-content ">
                                         <h4>Titan Watch</h4>
