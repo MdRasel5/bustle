@@ -28,6 +28,10 @@
                 top: 0;
                 display: none;
 
+                @include desktop {
+                    width: 600px;
+                }
+
                 .mega-menu {
                     width: 100%;
                     display: block !important;
@@ -94,6 +98,12 @@
 
     }
 
+    @include xsm-device {
+        .category-dropdown {
+            display: none;
+        }
+    }
+
     .hero-banner-slider {
         position: relative;
         height: 490px;
@@ -130,6 +140,12 @@
                 @include tablet {
                     max-width: 180px;
                 }
+
+                @include sm-device {
+                    max-width: 210px;
+                }
+
+
 
             }
         }
@@ -200,13 +216,21 @@
         grid-row-gap: 20px;
     }
 
-
+    @include sm-device {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 20px;
+    }
 
     .collection {
         height: 240px;
         padding: 30px;
         position: relative;
         margin-bottom: 20px;
+
+        @include sm-device {
+            padding: 54px;
+        }
     }
 
     img {
@@ -214,6 +238,12 @@
         right: 5%;
         top: 5%;
         max-width: 135px;
+
+        @include sm-device {
+            right: 15%;
+        }
+
+
     }
 
     h4 {

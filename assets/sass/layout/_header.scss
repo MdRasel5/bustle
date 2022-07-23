@@ -10,6 +10,10 @@ html {
         padding: 20px 0;
         position: relative;
 
+        @include sm-device {
+            margin-bottom: 30px;
+        }
+
         .header-info {
             display: flex;
         }
@@ -26,6 +30,10 @@ html {
                 img {
                     width: 230px;
                     height: auto;
+
+                    @include xsm-device {
+                        width: 120px;
+                    }
                 }
             }
         }
@@ -45,6 +53,10 @@ html {
                     font-size: 14px;
                     cursor: pointer;
                     margin-right: 20px;
+
+                    @include xsm-device {
+                        margin-right: 5px;
+                    }
                 }
 
                 .cart-dropdown {
@@ -161,11 +173,30 @@ html {
                     display: block;
                 }
 
+                .menu-icon {
+                    display: none;
+
+                    @include tablet {
+                        display: block;
+                    }
+
+                    @include sm-device {
+                        display: block;
+                    }
+
+                }
+
+
+
             }
         }
     }
 
     .header-bottom {
+        @include tablet {
+            padding: 15px 0;
+        }
+
         .categories {
             background-color: $primary-color;
             padding: 20px;
@@ -227,6 +258,10 @@ html {
                 font-size: 14px;
             }
 
+            @include tablet {
+                font-size: 14px;
+            }
+
             strong,
             i {
                 color: $primary-color;
@@ -234,6 +269,131 @@ html {
         }
     }
 
+    // Mobile Responsive
+    @include xsm-device {
+        .h-top-left {
+            display: none;
+        }
 
+        .header-bottom {
+            display: none;
+        }
+    }
 
+}
+
+.mobile-header {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 320px;
+    min-height: 100vh;
+    bottom: 0;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.09);
+    z-index: 99999;
+
+    .mobile-header-wrapper {
+        padding: 0px 0px 30px;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mobile-header-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 30px;
+
+        img {
+            width: 140px;
+        }
+    }
+
+    .mobile-header-content {
+        padding: 30px;
+
+        .mobile-search {
+            margin-bottom: 30px;
+
+            form {
+                position: relative;
+
+                input {
+                    font-size: 14px;
+                    height: 45px;
+                    color: #253D4E;
+                    background-color: #F2F3F4;
+                    border-radius: 5px;
+                    padding: 3px 50px 3px 20px;
+                    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    border: 0;
+                    width: 100%;
+                }
+
+                button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    border: none;
+                    font-size: 16px;
+                    height: 100%;
+                    padding: 0 14px;
+                    background-color: transparent;
+                    color: #333;
+                }
+            }
+        }
+
+        .mobile-menu {
+            margin-bottom: 30px;
+
+            li {
+                border-bottom: 1px solid #ececec;
+                padding: 13px 0;
+
+                a {
+                    color: $black-color2;
+                    display: block;
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    i {
+                        float: right;
+
+                    }
+                }
+            }
+        }
+
+        .mobile-social-icon {
+            margin-bottom: 30px;
+
+            h6 {
+                margin-bottom: 15px;
+            }
+
+            i {
+                display: inline-block;
+                color: $primary-color;
+                background: #fff;
+                font-size: 16px;
+                margin-right: 15px;
+            }
+        }
+
+        .site-copyright {
+            color: $black-color2;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+    }
+}
+
+.mobile-header-visabble {
+    left: 0;
 }

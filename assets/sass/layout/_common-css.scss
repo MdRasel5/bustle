@@ -32,3 +32,9 @@
     color: $secondary-color3;
     background-color: #e7faff;
 }
+
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+    opacity: 1;
+}

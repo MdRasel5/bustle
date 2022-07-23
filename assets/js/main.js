@@ -6,13 +6,26 @@ $(document).ready(function(){
        arrows: false
     });
 
-
-
      $('.currency-select').niceSelect();
 });
 
+// Mobile Menu
+function mobileMenu() {
+   var element = document.getElementById("mobile-header");
+   element.classList.toggle("mobile-header-visabble");
+   
+}
+function mobileMenuClose() {
+
+   let element = document.getElementById("mobile-header");
+   element.classList.remove("mobile-header-visabble");
+   
+}
+
+
+
 // Cart
-function myFunction() {
+function cartDropdown() {
    var element = document.getElementById("cart-dropdown");
    element.classList.toggle("cart-dropdown-block");
 }
