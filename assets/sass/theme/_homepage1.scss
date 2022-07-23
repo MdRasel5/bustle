@@ -126,89 +126,114 @@
                 @include screen-1200 {
                     max-width: 230px;
                 }
+
+                @include tablet {
+                    max-width: 180px;
+                }
+
             }
         }
 
     }
 
-    // Slick Customization
 
-    .slick-dots {
-        position: absolute;
-        top: 88%;
+
+
+
+}
+
+// Slick Customization
+
+.slick-dots {
+    position: absolute;
+    top: 88%;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.slick-dots .slick-active {
+    font-size: 0;
+    width: 30px;
+    height: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: $primary-color;
+    display: inline-block;
+
+    button {
+        background-color: transparent;
+    }
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: $white-color;
+}
+
+.slick-dots li button::before {
+    font-size: 0;
+}
+
+// Slick End
+
+.new-collection {
+    position: relative;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     }
 
-    .slick-dots li {
-        display: inline-block;
-        margin-right: 5px;
+    @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     }
 
-    .slick-dots .slick-active {
-        font-size: 0;
-        width: 30px;
-        height: 10px;
-        border-radius: 6px;
-        border: none;
-        background-color: $primary-color;
-        display: inline-block;
 
-        button {
-            background-color: transparent;
-        }
-    }
 
-    .slick-dots li button {
-        font-size: 0;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border: none;
-        background-color: $white-color;
-    }
-
-    .slick-dots li button::before {
-        font-size: 0;
-    }
-
-    // Slick End
-
-    .new-collection {
+    .collection {
+        height: 240px;
+        padding: 30px;
         position: relative;
+        margin-bottom: 20px;
+    }
 
-        .collection {
-            height: 240px;
-            padding: 30px;
-            position: relative;
-            margin-bottom: 20px;
-        }
+    img {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        max-width: 135px;
+    }
 
-        img {
-            position: absolute;
-            right: 5%;
-            top: 5%;
-            max-width: 135px;
-        }
-
-        h4 {
-            margin-bottom: 20px;
-
-        }
-
-        p {
-            margin-bottom: 20px;
-        }
-
-        a {
-            text-decoration: none;
-            color: $black-color2;
-            font-weight: 600;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
+    h4 {
+        margin-bottom: 20px;
 
     }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $black-color2;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
 
 }

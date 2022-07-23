@@ -189,6 +189,15 @@ html {
                 list-style: none;
                 display: inline-block;
                 margin-left: 40px;
+
+                @include desktop {
+                    margin-left: 25px;
+                }
+
+                @include tablet {
+                    margin-left: 20px;
+                }
+
             }
 
             a {
@@ -196,6 +205,10 @@ html {
                 color: $black-color2;
                 font-size: 14px;
                 font-weight: 500;
+
+                @include desktop {
+                    font-weight: normal;
+                }
             }
 
             a:hover {
@@ -209,6 +222,10 @@ html {
             color: $heading-color;
             font-weight: bold;
             float: right;
+
+            @include desktop {
+                font-size: 14px;
+            }
 
             strong,
             i {
