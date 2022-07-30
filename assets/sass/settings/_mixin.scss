@@ -1,12 +1,12 @@
 // Responsive Breakpoint
 @mixin xsm-device() {
-    @media (min-width: 320px) and (max-width: 575.98px) {
+    @media (min-width: 320px) and (max-width: 479.98px) {
         @content;
     }
 }
 
 @mixin portrait-phone() {
-    @media (max-width: 575.98px) {
+    @media (min-width: 480px) and (max-width: 575.98px) {
         @content;
     }
 }

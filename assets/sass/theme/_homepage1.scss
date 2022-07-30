@@ -1,6 +1,6 @@
 /* Homepage 1*/
 
-// hero area
+// hero area start
 
 .hero-section {
     .category-dropdown {
@@ -98,11 +98,20 @@
 
     }
 
+    @include portrait-phone {
+        .category-dropdown {
+            display: none;
+        }
+    }
+
+
     @include xsm-device {
         .category-dropdown {
             display: none;
         }
     }
+
+
 
     .hero-banner-slider {
         position: relative;
@@ -114,9 +123,18 @@
             padding: 100px 40px;
         }
 
+        @include xsm-device {
+            height: 360px;
+            padding: 50px 20px;
+        }
+
         h2 {
             color: $white-color;
             margin-bottom: 20px;
+
+            @include xsm-device {
+                font-size: 38px;
+            }
         }
 
         p {
@@ -143,6 +161,10 @@
 
                 @include sm-device {
                     max-width: 210px;
+                }
+
+                @include xsm-device {
+                    max-width: 130px;
                 }
 
 
@@ -243,6 +265,10 @@
             right: 15%;
         }
 
+        @include xsm-device {
+            right: 5%;
+        }
+
 
     }
 
@@ -265,5 +291,61 @@
         }
     }
 
+
+}
+
+// Hero Section End
+
+// Category Section Start
+.product-cetagory {
+    padding: 70px 0;
+
+    .all-categories {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+
+        @include screen-1200 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include sm-device {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include xsm-device {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+    .single-category {
+        padding: 25px;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+
+        .c-image {
+            margin-right: 20px;
+        }
+
+        .c-text {
+            h6 {
+                font-weight: 500;
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
 
 }
