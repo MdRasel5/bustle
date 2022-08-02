@@ -408,13 +408,12 @@
     padding: 40px 0;
 
     .banner-1 {
-        max-height: 432px;
+        max-height: 560px;
         position: relative;
 
         .banner-img {
             img {
-                max-height: 432px;
-                width: auto;
+                max-height: 560px;
             }
         }
 
@@ -426,7 +425,6 @@
             h4 {
                 margin-bottom: 20px;
                 font-weight: 500;
-                margin-bottom: 10px;
             }
 
             p {
@@ -443,13 +441,12 @@
     }
 
     .banner-2 {
-        max-height: 340px;
+        height: 365px;
         position: relative;
 
         .banner-img {
             img {
-                max-height: 340px;
-                width: auto;
+                height: 365px;
             }
         }
 
@@ -457,6 +454,10 @@
             position: absolute;
             top: 15%;
             left: 15%;
+
+            h5 {
+                margin-top: 20px;
+            }
 
             img {
                 max-height: 135px;
@@ -466,22 +467,76 @@
     }
 
     .tabs-slider {
+        position: relative;
+
         .section-title {
-            justify-content: space-between;
             margin-bottom: 30px;
+
+            h5 {
+                margin-right: 30%;
+            }
+
+            ul li {
+                margin-right: 50px;
+            }
+
+            ul li button {
+                color: $heading-color;
+                border: none;
+                padding: 0;
+                background-color: #fff;
+                font-size: 16px;
+            }
+
+            ul li .active {
+                color: $heading-color2;
+                font-weight: 500;
+            }
         }
 
         .single-product {
             background-color: $product-bg;
             padding: 30px;
+            margin: 0 10px;
             margin-bottom: 30px;
             cursor: pointer;
+
 
             &:hover {
                 background-color: $white-color;
                 box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
                     rgba(17, 17, 26, 0.05) 0px 8px 32px;
             }
+        }
+
+        .arrow-left {
+            position: absolute;
+            left: 93%;
+            top: -60px;
+            background-image: linear-gradient(to right, #0da8e8, #00b1e7, #00b9e3, #00c1de, #0dc8d7);
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            font-size: 14px;
+            line-height: 11px;
+            padding: 11px;
+            cursor: pointer;
+            color: $white-color;
+        }
+
+        .arrow-right {
+            position: absolute;
+            left: 96%;
+            top: -60px;
+            background-image: linear-gradient(to right, #0da8e8, #00b1e7, #00b9e3, #00c1de, #0dc8d7);
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            font-size: 14px;
+            line-height: 11px;
+            padding: 11px;
+            cursor: pointer;
+            color: $white-color;
         }
 
         .ratings {

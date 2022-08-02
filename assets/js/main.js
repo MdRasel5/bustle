@@ -9,19 +9,33 @@ $(document).ready(function(){
      $('.currency-select').niceSelect();
 });
 
+// Tab Product Slider
+$(document).ready(function(){
+    $('.tab-product-slider-active').slick({
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+         arrows: true,
+        prevArrow:"<i class='fa-solid fa-angle-left arrow-left' aria-hidden='true'></i>",
+        nextArrow:"<i class='fa-solid fa-angle-right arrow-right' aria-hidden='true'></i>"
+    });
+
+});
+
+
 // Mobile Menu
 function mobileMenu() {
    var element = document.getElementById("mobile-header");
    element.classList.toggle("mobile-header-visabble");
    
 }
+
 function mobileMenuClose() {
 
    let element = document.getElementById("mobile-header");
    element.classList.remove("mobile-header-visabble");
    
 }
-
 
 
 // Cart
