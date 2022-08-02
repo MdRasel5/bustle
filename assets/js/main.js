@@ -13,6 +13,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.tab-product-slider-active').slick({
         dots: false,
+        rows: 2,
         slidesToShow: 4,
         slidesToScroll: 2,
          arrows: true,
