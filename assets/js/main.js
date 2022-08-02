@@ -18,7 +18,33 @@ $(document).ready(function(){
         slidesToScroll: 2,
          arrows: true,
         prevArrow:"<i class='fa-solid fa-angle-left arrow-left' aria-hidden='true'></i>",
-        nextArrow:"<i class='fa-solid fa-angle-right arrow-right' aria-hidden='true'></i>"
+        nextArrow:"<i class='fa-solid fa-angle-right arrow-right' aria-hidden='true'></i>",
+        responsive: [
+         {
+            breakpoint: 1199.98,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+            }
+         },
+         {
+            breakpoint: 767.98,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+         },
+         {
+            breakpoint: 480,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+         }
+         // You can unslick at a given breakpoint now by adding:
+         // settings: "unslick"
+         // instead of a settings object
+      ]
     });
 
 });

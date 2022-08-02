@@ -156,7 +156,7 @@
                 }
 
                 @include tablet {
-                    max-width: 180px;
+                    max-width: 300px;
                 }
 
                 @include sm-device {
@@ -362,41 +362,46 @@
         clear: both;
         margin-bottom: 20px;
         min-height: 200px;
+    }
 
-        .banner-text {
-            position: absolute;
-            top: 25%;
-            padding: 0 40px;
-            z-index: 2;
+    .banner-text {
+        position: absolute;
+        top: 25%;
+        padding: 0 40px;
+        z-index: 2;
 
-            span {
-                font-size: 14px;
-                color: $secondary-color;
-                font-weight: 500;
-                margin-bottom: 15px;
-                display: inline-block;
+        @include tablet {
+            top: 15%;
+            padding: 0 20px;
+        }
+
+        span {
+            font-size: 14px;
+            color: $secondary-color;
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+            font-weight: 500;
+
+            @include xsm-device {
+                font-size: 18px;
             }
 
-            h4 {
-                margin-bottom: 20px;
-                font-weight: 500;
-
-                @include xsm-device {
-                    font-size: 18px;
-                }
-
-                @include portrait-phone {
-                    font-size: 18px;
-                }
-
+            @include portrait-phone {
+                font-size: 18px;
             }
 
-            a {
-                color: $heading-color;
-                font-size: 14px;
-                font-weight: 500;
-                text-decoration: underline;
-            }
+        }
+
+        a {
+            color: $heading-color;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
         }
     }
 }
@@ -408,12 +413,17 @@
     padding: 40px 0;
 
     .banner-1 {
-        max-height: 560px;
+        max-height: 440px;
         position: relative;
+
+        @include sm-device {
+            display: none;
+        }
+
 
         .banner-img {
             img {
-                max-height: 560px;
+                max-height: 440px;
             }
         }
 
@@ -444,6 +454,10 @@
         height: 365px;
         position: relative;
 
+        @include sm-device {
+            display: none;
+        }
+
         .banner-img {
             img {
                 height: 365px;
@@ -463,6 +477,10 @@
                 max-height: 135px;
                 width: auto;
             }
+
+            span {
+                font-size: 14px;
+            }
         }
     }
 
@@ -472,12 +490,51 @@
         .section-title {
             margin-bottom: 30px;
 
+            @include sm-device {
+                display: block !important;
+            }
+
             h5 {
                 margin-right: 30%;
+
+                @include screen-1200 {
+                    margin-right: 15%;
+                }
+
+                @include desktop {
+                    margin-right: 8%;
+                }
+
+                @include tablet {
+                    margin-right: 8%;
+                }
+
+
+                @include sm-device {
+                    margin-bottom: 20px;
+                }
+
+
+
             }
 
             ul li {
                 margin-right: 50px;
+
+                @include desktop {
+                    margin-right: 15px;
+                }
+
+                @include tablet {
+                    margin-right: 15px;
+                }
+
+                @include sm-device {
+                    margin-right: 15px;
+                }
+
+
+
             }
 
             ul li button {
@@ -496,19 +553,27 @@
 
         .single-product {
             background-color: $product-bg;
-            padding: 30px;
+            padding: 20px;
             margin: 0 10px;
             margin-bottom: 30px;
             cursor: pointer;
-
+            display: block !important;
+            width: auto !important;
 
             &:hover {
                 background-color: $white-color;
                 box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
                     rgba(17, 17, 26, 0.05) 0px 8px 32px;
             }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 500;
+            }
         }
 
+
+        // Slick Slider
         .arrow-left {
             position: absolute;
             left: 93%;
@@ -522,6 +587,23 @@
             padding: 11px;
             cursor: pointer;
             color: $white-color;
+
+            @include screen-1200 {
+                left: 92%;
+            }
+
+            @include desktop {
+                left: 89%;
+            }
+
+            @include tablet {
+                left: 89%;
+            }
+
+            @include sm-device {
+                left: 85%;
+            }
+
         }
 
         .arrow-right {
@@ -537,6 +619,19 @@
             padding: 11px;
             cursor: pointer;
             color: $white-color;
+
+            @include desktop {
+                left: 95%;
+            }
+
+            @include tablet {
+                left: 95%;
+            }
+
+            @include sm-device {
+                left: 92%;
+            }
+
         }
 
         .ratings {
@@ -551,8 +646,8 @@
         }
 
         .product-img-wrapper {
-            padding: 30px 25px 0 50px;
-            height: 190px;
+            padding: 20px 20px 0 20px;
+            height: 180px;
             overflow: hidden;
             margin-bottom: 30px;
         }
@@ -572,6 +667,10 @@
                 top: 0;
                 left: 0;
             }
+
+            .default-img {
+                width: auto;
+            }
         }
 
         .single-product:hover .default-img {
@@ -582,6 +681,7 @@
         .single-product:hover .hover-img {
             opacity: 1;
             visibility: visible;
+            width: auto;
         }
 
 
@@ -589,7 +689,8 @@
             h5 {
                 font-weight: 500;
                 line-height: 30px;
-                margin-bottom: 15px;
+                margin-bottom: 8px;
+                font-size: 16px;
 
                 a {
                     color: $heading-color;
@@ -600,15 +701,24 @@
                 }
             }
 
-            strong {
-                margin-right: 3px;
+            .product-price {
+                strong {
+                    margin-right: 5px;
+                }
+
+                del {
+                    font-weight: normal;
+                    font-size: 14px;
+                    margin-right: 16px;
+                }
+
+                @include tablet {
+                    span {
+                        display: none;
+                    }
+                }
             }
 
-            del {
-                font-weight: normal;
-                font-size: 14px;
-                margin-right: 16px;
-            }
 
         }
     }
